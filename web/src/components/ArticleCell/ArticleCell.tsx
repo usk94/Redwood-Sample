@@ -1,5 +1,3 @@
-import type { ArticleQuery } from 'types/graphql'
-
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
 
 import Article from '../Article/Article'
@@ -23,6 +21,6 @@ export const Failure = ({ error }: CellFailureProps) => (
   <div style={{ color: 'red' }}>Error: {error.message}</div>
 )
 
-export const Success = ({ article }: CellSuccessProps<ArticleQuery>) => {
+export const Success = ({ article }: CellSuccessProps) => {
   return <Article article={article} />
 }
