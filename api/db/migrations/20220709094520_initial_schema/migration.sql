@@ -1,0 +1,8 @@
+-- AlterTable
+ALTER TABLE "Contact" ALTER COLUMN "createdAt" SET DATA TYPE TIMESTAMP(3);
+
+-- AlterTable
+ALTER TABLE "Post" ALTER COLUMN "createdAt" SET DATA TYPE TIMESTAMP(3);
+
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "resetTokenExpireAt" SET DATA TYPE TIMESTAMP(3);
